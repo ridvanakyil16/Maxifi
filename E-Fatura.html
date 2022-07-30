@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Maxifi</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://uyg.maxifi.com.tr/Content/icon/favicon-96x96.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/royal-preload.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+
+    <style>
+        body {
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sectionpagefatura {
+            width: 90%;
+            background: #fff;
+            margin: 0%;
+            padding: 25px;
+            margin-top: 40px;
+            display: flex;
+        }
+        
+        .section-E-fatura {
+            width: 60%;
+            height: auto;
+            margin-top: 30px;
+        }
+        
+        .section-E-fatura .img {
+            width: 100%;
+            float: left;
+        }
+        
+        .section-E-fatura .img img {
+            width: 40%;
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .section-E-fatura .img p {
+            font-size: 15px;
+            line-height: 23px;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        
+        .content h4 {
+            font-size: 18px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #72b99c;
+        }
+        
+        .content h6 {
+            font-size: 14px;
+            margin-top: 20px;
+            color: rgb(173, 10, 10);
+        }
+        
+        .content ul {
+            list-style: none;
+        }
+        
+        .content ul li {
+            color: black;
+        }
+        
+        .content p {
+            color: black;
+            line-height: 24px;
+        }
+        
+        .section-form {
+            width: 40%;
+            height: auto;
+            padding: 0 15px 0 30px;
+            margin-top: 30px;
+        }
+        
+        .col-lg-12 {
+            width: 100%;
+        }
+        
+        .hizmetlerimiz {
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+        }
+        
+        .hizmetlerimiz .hizmetlercard {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border: 1px solid #111;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        
+        .hizmetlerimiz .hizmetlercard .images {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hizmetlerimiz .hizmetlercard .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            visibility: hidden;
+            transition: all 0.5s ease;
+        }
+        
+        .hizmetlerimiz .hizmetlercard:hover .content {
+            top: 0%;
+            visibility: visible;
+            z-index: 10;
+            background: rgba(200, 10, 10, 0.9);
+        }
+        
+        .hizmetlerimiz .hizmetlercard:hover .content p {
+            color: #fff;
+        }
+        
+        .hizmetlerimiz .hizmetlercard:hover .content h5 {
+            line-height: 0px;
+            color: #fff;
+            margin-top: 25px;
+        }
+        
+        .hizmetlerimiz h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: -80px;
+            margin-bottom: 10px;
+            color: crimson;
+        }
+        
+        @media(max-width:1000px) {
+            .sectionpagefatura {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+            }
+            .section-E-fatura {
+                width: 100%;
+                height: auto;
+                margin-top: 30px;
+            }
+            .section-form {
+                width: 100%;
+                height: auto;
+                padding: 0;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .col-lg-12 {
+                width: 80%;
+            }
+            .hizmetlerimiz {
+                margin-top: 50px;
+                width: 80%;
+                height: 50%;
+                background-color: #fff;
+            }
+        }
+        
+        @media(max-width:550px) {
+            .sectionpagefatura {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            .section-E-fatura {
+                width: 100%;
+                height: auto;
+                margin-top: 30px;
+            }
+            .section-form {
+                width: 100%;
+                height: auto;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+            .col-lg-12 {
+                width: 100%;
+            }
+            .hizmetlerimiz {
+                margin-top: 50px;
+                width: 100%;
+                height: 50%;
+                background-color: #fff;
+            }
+        }
+    </style>
+
+
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="index.html">Logo</a>
+                </div>
+                <ul class="ul">
+                    <li><a href="index.html" data-after="Home">ANASAYFA</a></li>
+                    <li><a href="service.html" data-after="Service">HİZMETLERİMİZ</a></li>
+                    <li><a href="Kampanyalar.html" data-after="Projects">KAMPANYALAR</a></li>
+                    <li><a href="about-us.html" data-after="About">HAKKIMIZDA</a></li>
+                    <li><a href="contact.html" data-after="Contact">İLETİŞİM</a></li>
+                </ul>
+                <div class="nav-list">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="font-size: 1.3rem; color: #fff; margin-right: 10px; font-family: 'Montserrat', sans-serif;"></div>
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="ul2">
+                        <div class="ul3">
+                            <ul>
+                                <li><a href="#">KURUMSAL</a></li>
+
+                                <li><a href="#">ANASAYFA</a></li>
+                                <li><a href="#">HİZMETLERİMİZ</a></li>
+                                <li><a href="#">KAMPANYALAR</a></li>
+                                <li><a href="#">HAKKIMIZDA</a></li>
+                                <li><a href="#">İLETİŞİM</a></li>
+                                <li><a href="#">MÜŞTERİ</a></li>
+                                <li><a href="#">TAKINTILILIK</a></li>
+                                <li><a href="#">BASIN ODASI</a></li>
+                                <li><a href="#">İNSAN KAYNAKLARI</a></li>
+                                <li><a href="#">DUYURULAR</a></li>
+                                <li><a href="#">SÜRÜM GÜNCELLEMELERİ</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">ÜRÜNLER VE HİZMETLER</a></li>
+
+                                <li><a href="#">MİKRO RUN</a></li>
+                                <li><a href="#">CLOUD</a></li>
+                                <li><a href="#">MİKRO JUMP</a></li>
+                                <li><a href="#">MİKRO FLY</a></li>
+                                <li><a href="#">MİKRO HIZLI</a></li>
+                                <li><a href="#">SATIŞ</a></li>
+                                <li><a href="#">MİKRO RUN</a></li>
+                                <li><a href="#">MİKRO MUŞAVİR</a></li>
+                                <li><a href="#">MİKRO DRİVE</a></li>
+                                <li><a href="#">MAG(MİKRO)</a></li>
+                                <li><a href="#">ASİSTAN</a></li>
+                                <li><a href="#">GÜNCELLEME</a></li>
+                                <li><a href="#">VERİBİS CRM</a></li>
+                                <li><a href="#">MİKRO ASİSTAN</a></li>
+                            </ul>
+                            <ul class="ul4">
+                                <li><a href="#">YAZILIM PROGRAMI</a></li>
+
+                                <li><a href="#">ERP PROGRAMI</a></li>
+                                <li><a href="#">STOK TAKİP PROGRAMI</a></li>
+                                <li><a href="#">MUHASEBE PROGRAMI</a></li>
+                                <li><a href="#">VERESİYE PROGRAMI</a></li>
+                                <li><a href="#">TEKNİK SERVİS PROGRAMI</a></li>
+                                <li><a href="#">İŞ TAKİP PROGRAMI</a></li>
+                                <li><a href="#">MAAŞ HESEPLAMA PROGRAMI</a></li>
+                                <li><a href="#">BARKODLU STOK TAKİP PROGRAMI</a></li>
+                                <li><a href="#">FAZLA MESAİ ÜCRETİ HESAPLAMA</a></li>
+                                <li><a href="#">VARDİYA PROGRAMI</a></li>
+                                <li><a href="#">YEDEK PARÇA PROGRAMI</a></li>
+                                <li><a href="#">AMORTİSMAN HESAPLAMA PROGRAMI</a></li>
+                                <li><a href="#">SATIŞ TAKİP PROGRAMI</a></li>
+                                <li><a href="#">MUHASEBE KAYIT PROGRAMI</a></li>
+                                <li><a href="#">ÜRETİM PLANLAMA PROGRAMI</a></li>
+                                <li><a href="#">FİYAT LİSTESİ HAZIRLAMA PROGRAMI</a></li>
+                                <li><a href="#">PLANLAMA PROGRAMI</a></li>
+                                <li><a href="#">DEPO SAYIM PROGRAMI</a></li>
+                                <li><a href="#">MÜŞTERİ YÖNETİMİ PROGRAMI</a></li>
+                                <li><a href="#">BÜTÇE PLANLAMA PROGRAMI</a></li>
+                                <li><a href="#">YILLIK İZİN PROGRAMI</a></li>
+                                <li><a href="#">WEB TABANLI STOK TAKİP PROGRAMI</a></li>
+                                <li><a href="#">SAAT ÜCRETİNDEN MAAŞ HESAPLAMA PROGRAMI</a></li>
+                                <li><a href="#">TAHSİLAT MAKBUZ PROGRAMI</a></li>
+                                <li><a href="#">FİŞ YAZDIRMA PROGRAMI</a></li>
+                                <li><a href="#">KDV TEVKİFATI HESAPLAMA PROGRAMI</a></li>
+                                <li><a href="#">KİRA DAMGA VERGİSİ HESAPLAMA PROGRAMI</a></li>
+                            </ul>
+                            <ul class="ul5">
+                                <li><a href="#">E-DÖNÜŞÜM İŞ</a></li>
+                                <li><a href="#">E-FATURA</a></li>
+                                <li><a href="#">E-ARŞİV</a></li>
+                                <li><a href="#">E-DEFTER</a></li>
+                                <li><a href="#">E-BORDRO</a></li>
+                                <li><a href="#">E-MUTABAKAT</a></li>
+                                <li><a href="#">MİKRO KEP</a></li>
+                                <li><a href="#">E-İRSALİYE</a></li>
+                                <li><a href="#">E-MÜSTAHSİL MAKBUZU</a></li>
+                                <li><a href="#">E-SERBEST</a></li>
+                                <li><a href="#">MESLEK MAKBUZU</a></li>
+                                <li><a href="#">E-Z RAPORU</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">İŞ ORTAKLARI</a></li>
+
+                                <li><a href="#">İŞ ORTAKLARIMIZ</a></li>
+                                <li><a href="#">İŞ ORTAĞI</a></li>
+                                <li><a href="#">BAŞVURU FORMU</a></li>
+                                <li><a href="#">İŞ ORTAKLARI PORTALI</a></li>
+                                <li><a href="#">AKADEMİRKO</a></li>
+                                <li><a href="#">LOGOLAR VE GÖRSELLERİ</a></li>
+                                <li><a href="#">İŞ ORTAKLARI KURUMSAL KİMLİK</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">İLETİŞİM</a></li>
+
+                                <li><a href="#">BİZE ULAŞIN</a></li>
+                                <li><a href="#">BANKA BİLGİLERİ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sectionpagefatura">
+        <div class="section-E-fatura">
+            <div class="img">
+                <img src="images_2/images/img_2.jpg" alt="">
+
+                <h4>E-Fatura nedir?</h4>
+
+                <p>E-Fatura, kağıda basılmayan, tüm işlemleri dijital ortamda yapılan bir elektronik belgedir. Veri format ve standardı Gelir İdaresi Başkanlığı (GİB) tarafından belirlenir. İçeriğinde ise Vergi Usul Kanunu'na (VUK) göre bir faturada yer
+                    alması gereken bilgiler yer alır. Satıcı ve alıcı arasındaki iletimi de GİB tarafından yapılır. Kağıt (matbu) fatura elde ya da program aracılığıyla hazırlanıp yazıcıdan bastırılırken e-Fatura yalnızca dijital ortamda oluşturulur ve
+                    gönderilir. VUK için her iki fatura tipi de yasaldır. E-Fatura’nın matbu faturadan tek farkı, elektronik ortam üzerinden alınması ve gönderilmesidir.</p>
+            </div>
+            <div class="content">
+
+                <!-- AVANTAJLAR  -->
+                <h4>E-Fatura'nın avantajları</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-check-double"></i> İşletmenizin uluslararası finansal standartlara ve Maliye Bakanlığı'nın belirlediği koşullara uygun, iç ve dış denetime hazır bir sisteme kavuşmasını sağlar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Entegrasyonu sürecinizi Mikro Yazılım’ın 30 yıllık iş yazılımları deneyimi ile baştan sona yönetir.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Gerek masaüstü gerek bulut iş çözümleriyle uyumlu çalışır.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Firmanızın bilişim teknolojileri ve muhasebe birimlerinin daha etkin çalışmasını sağlar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> E-Fatura saklama hizmetini ücretsiz olarak sunar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Ticari yazılım kullanmayanlar için de fatura gönderip alma platformu sunar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Size mobilite, hız ve pratiklik sunar. İş süreçlerinizi kısaltır, hatadan arındırır ve işletme verimliliğinizi artırır.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Fatura basma ve kargolama maliyetlerini ortadan kaldırır.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Resmi, hukuki ve ticari belgelerinizi kaybolma riski olmadan uzun yıllar boyunca güvenle saklar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Dilediğiniz belgeye saniyeler içinde erişmenize olanak tanır.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Faturalama sürecini hızlandırarak ödemelerinizi zamanında almanızı sağlar.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-double"></i> Kağıt kullanımını azaltarak çevreyi korumanıza yardım eder.
+                    </li>
+                </ul>
+
+                <!-- FAYDALANMA YÖNTEMLERİ  -->
+                <h4>E-Faturadan faydalanma yöntemleri</h4>
+
+                <p>E-Faturadan üç farklı yöntemle faydalanabilirsiniz:</p>
+
+                <h6>1. Mikro Yazılım Ticari Paket Programı</h6>
+
+                <p>Mikro Yazılım programı ve e-Fatura modülü ile kestiğiniz faturaları dijital olarak mühürleyerek GİB'e iletebilirsiniz. Böylece tedarikçilerinizin gönderdiği e-Faturalar GİB posta kutusundan alınarak Mikro Yazılım programınıza otomatik
+                    olarak işlenir ve muhasebeleşir.</p>
+
+                <h6>2. MikroX</h6>
+
+                <p>Mikro Yazılım'ın geliştirdiği bulut teknolojisiyle çalışan online ön muhasebe programı ile e-Faturalarınızı hızlı ve kolayca hazırlayıp tek tuş ile gönderebilirsiniz. 3. Mikro Yazılım e-Fatura Portalı</p>
+
+                <p>Mikro Yazılım'ın e-Fatura Portalı ile elektronik ortamdan yatırım maliyeti ödemeksizin fatura gönderebilir, alabilir, saklayabilir ve görüntüleyebilirsiniz. Ayrıca Maliye Bakanlığı standartlarıyla tam uyumlu bir e-Fatura sistemine sahip
+                    olursunuz.
+                </p>
+
+                <!-- FAYDALANMA YÖNTEMLERİ  -->
+                <h4>e-Fatura aktivasyon adımları</h4>
+
+                <h6>1. Mali Mühür Başvurusu </h6>
+                <p>E-Fatura mükellefi olmak için Kamu Sertifikasyon Merkezi'nden mali mühür başvurusu yapmalısınız. Mali Mühür başvurusu için tıklayın.</p>
+
+                <h6>2. GİB Başvurusu </h6>
+                <p>Mali mührünüzü aldıktan sonra Gelir İdaresi Başkanlığı'nın (GİB) web sitesinden elektronik fatura başvurusu yapmalısınız. Başvuru yöntemi olarak 'özel entegrasyon' seçeneğini işaretleyip mali mührünüzü kullanabilirsiniz. GİB e-Fatura başvurusu
+                    için tıklayın.</p>
+
+                <h6>3. e-Mikro Portal başvurusu </h6>
+                <p>Aldığınız mali mühürle GİB başvurusunu tamamlandıktan sonra e-Mikro Portal kayıt formunu doldurarak süreci tamamlayabilirsiniz. e-Mikro Portal başvurusu için tıklayın.</p>
+                <p>e-Fatura'yı kullanmaya başlamadan önce e-Mikro destek hattını arayıp ayarlarınızı ÜCRETSİZ olarak yaptırabilirsiniz.
+                </p>
+
+                <p>Mikro Yazılım ürünlerinin ücretsiz demosunu talep etmek için formu doldurabilirsiniz. Sizi 0850 225 1010 numaralı telefondan arayarak demo talebinize istinaden iş ortaklarımıza yönlendireceğiz..
+                </p>
+            </div>
+        </div>
+        <div class="section-form">
+            <div class="col-lg-12">
+                <form action="contact.php" method="post" class="wpcf7">
+                    <div class="main-form">
+                        <h2>Ready to Get Started?</h2>
+                        <p class="font14">Your email address will not be published. Required fields are marked *</p>
+                        <p>
+                            <input type="text" name="name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Your Name *" required>
+                        </p>
+                        <p>
+                            <input type="email" name="email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Your Email *" required>
+                        </p>
+                        <p>
+                            <textarea name="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Message..." required></textarea>
+                        </p>
+                        <p><button type="submit" class="octf-btn octf-btn-light">Send Message</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <section class="hizmetlerimiz">
+                <h1>HİZMETLERİMİZ</h1>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_1.gif" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 1</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 2</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 3</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 4</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_5.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 5</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 5</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_7.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 7</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_8.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 8</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="hizmetlercard">
+                    <div class="images">
+                        <img src="images_2/Urunler/urun_9.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>Ürün 9</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/header-mobile.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+        window.jQuery = window.$ = jQuery;
+        (function($) {
+            "use strict";
+            //Preloader
+            Royal_Preloader.config({
+                mode: 'logo',
+                logo: 'https://base.maxifi.com.tr/assets/images/maxifi-logo-mavi.png',
+                logo_size: [160, 75],
+                showProgress: true,
+                showPercentage: true,
+                text_colour: '#000000',
+                background: '#ffffff'
+            });
+        })(jQuery);
+    </script>
+
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var navbar = document.querySelector("#header");
+            navbar.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
